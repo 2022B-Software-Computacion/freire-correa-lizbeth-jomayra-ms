@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461070287468",
+    "project_id": "b-s-ljfc",
+    "storage_bucket": "b-s-ljfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461070287468:android:72a65ed3fd5e3a2768ce49",
+        "android_client_info": {
+          "package_name": "com.example.ljfcapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461070287468-svq41f079792klevllgnvmlimb114mlo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBujUee0se3VF_0uV9aSvLIhB30MYsL0G4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461070287468-svq41f079792klevllgnvmlimb114mlo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
