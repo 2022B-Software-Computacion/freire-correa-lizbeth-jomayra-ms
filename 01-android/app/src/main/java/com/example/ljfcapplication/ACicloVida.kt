@@ -1,6 +1,7 @@
 package com.example.ljfcapplication
 
 import android.os.Bundle
+import android.os.PersistableBundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -71,4 +72,22 @@ class ACicloVida : AppCompatActivity() {
             .setAction("Action", null).show()
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.run {
+            //Guardar las variables primitivas
+            putString("textoGuardado", textoGlobal)
+            //putInt("numeroGuardado", numero)
+        }
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        val textoRecuperado: String? = savedInstanceState.getString("textoGuardado")
+        //val textoRecuperado: Int? = savedInstanceState.getInt("numeroGuardado")
+        if(textoRecuperado!= null){
+            mostrarSnackbar(textoRecuperado)
+            textoGlobal = textoRecuperado
+        }
+    }
 }

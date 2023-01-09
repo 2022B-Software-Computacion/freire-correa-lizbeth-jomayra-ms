@@ -72,6 +72,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -98,6 +100,10 @@
       <option name="presentableId" value="Default" />
       <updated>1673213449346</updated>
       <workItem from="1673213450138" duration="725000" />
+      <workItem from="1673215083634" duration="296000" />
+      <workItem from="1673215577974" duration="183000" />
+      <workItem from="1673215792023" duration="170000" />
+      <workItem from="1673215976419" duration="203000" />
     </task>
     <servers />
   </component>
