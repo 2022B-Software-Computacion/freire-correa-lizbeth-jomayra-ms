@@ -53,6 +53,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //Base de datos sqlite
+        EBaseDeDatos.TablaEntrenador = ESqliteHelpEntrenador(this)
+
         val botonCicloVida = findViewById<Button>(R.id.btn_ciclo_vida)
         botonCicloVida
             .setOnClickListener{
@@ -74,6 +78,18 @@ class MainActivity : AppCompatActivity() {
                     ContactsContract.CommonDataKinds.Phone.CONTENT_URI
                 )
                 contenidoIntentImplicito.launch(intentConRespuesta)
+            }
+
+        val botonIntent = findViewById<Button>(R.id.btn_intent)
+        botonIntent
+            .setOnClickListener {
+                abrirActividadConParametros(CIntentExplicitoParametros::class.java)
+            }
+
+        val botonSQlite = findViewById<Button>(R.id.btn_sqlite)
+        botonSQlite
+            .setOnClickListener {
+                irActividad(ECrudEntrenador::class.java)
             }
     }
 
