@@ -1,4 +1,11 @@
-    fun main(){
+import java.io.BufferedReader
+import java.io.File
+import java.io.FileReader
+import java.io.IOException
+import java.time.LocalDate
+import java.util.*
+
+fun main(){
         var flagMenu = true
         //Menu
         while (flagMenu) {
@@ -87,34 +94,52 @@
             }
         }
     }
-    fun leerAlbum(){
+    fun leerUniversidad(){
         var archivo: File? = null
         var fr: FileReader? = null
         var br: BufferedReader? = null
         try {
-            archivo = File("Albumes.txt")
+            archivo = File("Universidades.txt")
             fr = FileReader(archivo)
             br = BufferedReader(fr)
             var linea: String
             while (br.readLine().also { linea = it } != null) {
                 val tokens = StringTokenizer(linea, ",")
                 var dato: String = tokens.nextToken()
-                val nuevoAlbum = Album()
-                nuevoAlbum.numCanciones = dato.toInt()
+                val nuevaUniversidad = Universidad()
+                nuevaUniversidad.nombre = dato
                 dato = tokens.nextToken()
-                nuevoAlbum.fechaLanzamiento = LocalDate.parse(dato)
+                nuevaUniversidad.ciudad = dato
                 dato = tokens.nextToken()
-                nuevoAlbum.nombre = dato
+                nuevaUniversidad.fechaFundacion = LocalDate.parse(dato)
                 dato = tokens.nextToken()
-                nuevoAlbum.duracionTotal = dato.toFloat()
+                nuevaUniversidad.numeroDeFacultades = dato.toInt()
                 dato = tokens.nextToken()
-                nuevoAlbum.esDebut = dato.toBoolean()
+                nuevaUniversidad.esCategoriaA = dato.toBoolean()
                 dato = tokens.nextToken()
-                // aquí se debe añadir una lista de canciones
-                agregarListaCanciones()
+                // aquí se debe añadir una lista de facultades
+                agregarListaFacultades()
             }
 
         } catch (e: IOException) {
             e.printStackTrace()
         }
     }
+
+fun agregarListaFacultades() : MutableList<Facultad> {
+    var listaFacultadesNuevas = mutableListOf<Facultad>()
+    var aux = Facultad()
+    var flag1 = true
+    while (flag1) {
+        println("¿Desea agregar una Facultad a alguna Universidad?")
+        println("Y / N")
+        if (readln().equals("N")){
+            return listaFacultadesNuevas
+        }else{
+            println("Ingrese el ID de una Facultad")
+            aux = obtenerFacultadPorId(readln().toInt())
+            listaFacultadesNuevas.add(aux)
+        }
+    }
+    return listaFacultadesNuevas
+}
