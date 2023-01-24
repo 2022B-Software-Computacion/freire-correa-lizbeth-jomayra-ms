@@ -74,8 +74,9 @@ fun main(){
         while(flagFacultad){
             println("1. Agregar facultad")
             println("2. Listar facultades")
-            println("3. Actualizar una cancion")
-            println("4. Eliminar una cancion")
+            println("3. Actualizar ")
+            println("4. Eliminar ")
+            println("5. Salir ")
             var opcion = readln().toInt()
             when (opcion){
                 (1) -> {
@@ -111,6 +112,8 @@ fun agregarUniversidad(){
     universidad1.nombre = readln()
     println("Ingrese la ciudad: ")
     universidad1.ciudad = readln()
+    println("Ingrese la fecha de fundación: ")
+    universidad1.fechaFundacion = LocalDate.parse(readln())
     println("Ingrese el número de facultades existentes: ")
     universidad1.numeroDeFacultades = readln().toInt()
     println("Escriba V si es categoría A. Caso contrario, escriba F: ")
@@ -177,11 +180,13 @@ fun actualizarUniversidad(){
     // Lee el archivo y genera una lista de universidades actuales
     val file = File("universidades.txt")
     val reader = BufferedReader(FileReader(file, Charsets.UTF_8))
+    //
     reader.lines().forEach {
         var miListaFacultad = mutableListOf<Facultad>()
         val tokens = StringTokenizer(it, ",")
         var dato: String = tokens.nextToken()
         val nuevaUniversidad = Universidad()
+        nuevaUniversidad.id = dato.toInt()
         dato = tokens.nextToken()
         nuevaUniversidad.nombre = dato
         dato = tokens.nextToken()
@@ -207,6 +212,7 @@ fun actualizarUniversidad(){
         }
     }
     val indiceUniversidad = listaUniversidad.indexOf(univerdidadAux)
+    println(indiceUniversidad)
     // Eliminamos el album anterior
     listaUniversidad.remove(univerdidadAux)
     // Actualizamos los datos
@@ -405,8 +411,7 @@ fun listarFacultades(){
             nuevaFacultad.numeroProfesores = dato.toInt()
             dato = tokens.nextToken()
             nuevaFacultad.numeroEstudiantes = dato.toInt()
-            dato = tokens.nextToken()
-
+            listaFacultades.add(nuevaFacultad)
         }
     }catch (e: IOException){
         e.printStackTrace()
@@ -433,7 +438,7 @@ fun actualizarFacultad(){
         nuevaFacultad.numeroProfesores = dato.toInt()
         dato = tokens.nextToken()
         nuevaFacultad.numeroEstudiantes = dato.toInt()
-        dato = tokens.nextToken()
+        listaFacultad.add(nuevaFacultad)
     }
     var facultadAux = Facultad()
     listaFacultad.forEach {
@@ -499,7 +504,7 @@ fun eliminarFacultad(){
         nuevaFacultad.numeroProfesores = dato.toInt()
         dato = tokens.nextToken()
         nuevaFacultad.numeroEstudiantes = dato.toInt()
-        dato = tokens.nextToken()
+        listaFacultad.add(nuevaFacultad)
     }
     var facultadAux = Facultad()
     listaFacultad.forEach {

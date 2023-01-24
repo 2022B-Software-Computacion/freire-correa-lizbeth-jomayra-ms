@@ -50,6 +50,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="examen.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +75,10 @@
       <workItem from="1673819770711" duration="1422000" />
       <workItem from="1673879489286" duration="436000" />
       <workItem from="1674313468694" duration="3933000" />
-      <workItem from="1674409687060" duration="30328000" />
+      <workItem from="1674409687060" duration="30578000" />
+      <workItem from="1674482999141" duration="28000" />
+      <workItem from="1674493342578" duration="621000" />
+      <workItem from="1674520799262" duration="5430000" />
     </task>
     <servers />
   </component>
