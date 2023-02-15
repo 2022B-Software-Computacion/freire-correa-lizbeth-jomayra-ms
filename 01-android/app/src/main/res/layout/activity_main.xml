@@ -99,4 +99,14 @@
         app:layout_constraintStart_toStartOf="@+id/btn_sqlite"
         app:layout_constraintTop_toBottomOf="@+id/btn_sqlite" />
 
+    <Button
+        android:id="@+id/btn_intent_firebase_ui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="UI"
+        app:layout_constraintEnd_toEndOf="@+id/btn_google_maps"
+        app:layout_constraintStart_toStartOf="@+id/btn_google_maps"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google_maps" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
