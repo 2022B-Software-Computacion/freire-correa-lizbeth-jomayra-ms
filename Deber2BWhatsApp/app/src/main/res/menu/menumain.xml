@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="camara"
+        app:showAsAction="always"
+    android:id="@+id/cameraIcon"
+    android:icon="@drawable/ic_baseline_camera_alt_24"/>
+    <item android:title="search"
+        app:showAsAction="always"
+        android:id="@+id/searchIcon"
+        android:icon="@drawable/ic_baseline_search_24"/>
+    <item android:title="menu"
+        android:id="@+id/menuIcon"
+        android:icon="@drawable/ic_baseline_menu_24"/>
+    <item android:title="grupos"
+        app:showAsAction="always"
+        android:id="@+id/groupIcon"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+
+</menu>
