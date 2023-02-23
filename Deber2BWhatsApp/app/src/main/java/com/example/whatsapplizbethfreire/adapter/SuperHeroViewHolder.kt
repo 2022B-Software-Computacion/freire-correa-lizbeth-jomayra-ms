@@ -5,18 +5,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.whatsapplizbethfreire.Netflix
 import com.example.whatsapplizbethfreire.R
+import com.example.whatsapplizbethfreire.SuperHero
 
-class SuperHeroViewHolder(view: View): RecyclerView.ViewHolder(view){
-
-    val seperHero = view.findViewById<TextView>(R.id.tvSuperHeroName)
-    val photo: ImageView = view.findViewById<ImageView>(R.id.ivSuperHero)
-    val nombre = view.findViewById<TextView>(R.id.nombreContacto)
-
-    fun render(superHeroModel: Netflix) {
-        nombre.text = superHeroModel.grupo
-        seperHero.text = superHeroModel.superhero
-        Glide.with(photo.context).load(superHeroModel.photo).into(photo)
-        }
+class SuperHeroViewHolder (view: View):RecyclerView.ViewHolder(view){
+    val fecha = view.findViewById<TextView>(R.id.horadate)
+    val nombre = view.findViewById<TextView>(R.id.idSuperHeroName)
+    val mensaje = view.findViewById<TextView>(R.id.idSuperHeroMensaje)
+    val foto = view.findViewById<ImageView>(R.id.idSuperHero)
+    fun render(superHeroModel: SuperHero){
+        fecha.text = superHeroModel.date
+        nombre.text = superHeroModel.superhero
+        mensaje.text = superHeroModel.publisher
+        Glide.with(foto.context).load(superHeroModel.photo).into(foto)
+    }
 }

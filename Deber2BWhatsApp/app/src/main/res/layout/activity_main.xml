@@ -6,13 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/whatsAppRecyclerView1"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationView">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSuperHero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#008069"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="10dp"
+            android:text="Calls"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="10dp"
+            android:text="Status"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:text="Chats"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_baseline_groups_24" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
