@@ -9,12 +9,9 @@
         app:showAsAction="always"
         android:id="@+id/searchIcon"
         android:icon="@drawable/ic_baseline_search_24"/>
-    <item android:title="menu"
-        android:id="@+id/menuIcon"
-        android:icon="@drawable/ic_baseline_menu_24"/>
-    <item android:title="grupos"
+    <item android:title="opciones"
         app:showAsAction="always"
-        android:id="@+id/groupIcon"
-        android:icon="@drawable/ic_baseline_groups_24"/>
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_baseline_menu_24"/>
 
 </menu>

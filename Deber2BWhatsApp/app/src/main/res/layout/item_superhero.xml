@@ -13,14 +13,18 @@
         app:civ_border_width="2dp"
         app:civ_border_color="#FF000000"/>
     -->
-    <ImageView
-        android:id="@+id/idSuperHero"
 
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/idSuperHero"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
         android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
 
     <TextView
         android:id="@+id/idSuperHeroName"
