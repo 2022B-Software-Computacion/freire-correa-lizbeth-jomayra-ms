@@ -8,7 +8,6 @@ import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.whatsapplizbethfreire.adapter.StatusAdapter
-import com.example.whatsapplizbethfreire.adapter.SuperHeroAdapter
 
 class Estados : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

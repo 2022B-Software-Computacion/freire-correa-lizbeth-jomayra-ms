@@ -15,7 +15,7 @@
     -->
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/idSuperHero"
+        android:id="@+id/idFotoMensajes"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -27,24 +27,24 @@
         app:layout_constraintVertical_bias="0.923" />
 
     <TextView
-        android:id="@+id/idSuperHeroName"
+        android:id="@+id/idMensajeName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Hola1"
-        app:layout_constraintStart_toEndOf="@+id/idSuperHero"
+        app:layout_constraintStart_toEndOf="@+id/idFotoMensajes"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/idSuperHeroMensaje"
+        android:id="@+id/idMensaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="Hola2"
-        app:layout_constraintStart_toEndOf="@+id/idSuperHero"
-        app:layout_constraintTop_toBottomOf="@+id/idSuperHeroName" />
+        app:layout_constraintStart_toEndOf="@+id/idFotoMensajes"
+        app:layout_constraintTop_toBottomOf="@+id/idMensajeName" />
 
     <TextView
         android:id="@+id/textView"
@@ -63,6 +63,6 @@
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.927"
-        app:layout_constraintStart_toEndOf="@+id/idSuperHeroName"
+        app:layout_constraintStart_toEndOf="@+id/idMensajeName"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

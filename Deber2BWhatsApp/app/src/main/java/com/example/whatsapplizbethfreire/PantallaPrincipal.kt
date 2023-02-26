@@ -1,9 +1,9 @@
 package com.example.whatsapplizbethfreire
 
-data class SuperHero (
+data class PantallaPrincipal (
     val date : String,
-    val superhero : String,
-    val publisher : String,
+    val mensajeNombre : String,
+    val mensajeText : String,
     val photo : String
 
         )

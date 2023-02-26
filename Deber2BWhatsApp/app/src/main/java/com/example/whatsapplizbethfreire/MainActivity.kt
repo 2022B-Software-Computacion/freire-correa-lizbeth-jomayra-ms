@@ -1,21 +1,13 @@
 package com.example.whatsapplizbethfreire
 
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.drawable.BitmapDrawable
-import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
-import android.view.View
 import android.widget.Button
-import android.widget.ImageView
-import androidx.core.graphics.drawable.RoundedBitmapDrawable
-import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.whatsapplizbethfreire.adapter.SuperHeroAdapter
+import com.example.whatsapplizbethfreire.adapter.MensajesAdapter
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     private fun initRecyclerView() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerSuperHero)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = SuperHeroAdapter(SuperHeroProvider.superheroList)
+        recyclerView.adapter = MensajesAdapter(PantallaPrincipalProvider.mensajesList)
     }
 
 }
