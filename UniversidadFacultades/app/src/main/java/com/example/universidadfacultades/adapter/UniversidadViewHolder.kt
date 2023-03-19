@@ -19,6 +19,6 @@ class UniversidadViewHolder (view: View): RecyclerView.ViewHolder(view){
         carreras.text = universidadModel.numeroCarreras
         estudiantes.text = universidadModel.numeroEstudiantes
         docentes.text = universidadModel.numeroDocentes
-        
+
     }
 }

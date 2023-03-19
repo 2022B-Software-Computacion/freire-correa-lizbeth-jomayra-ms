@@ -24,7 +24,15 @@ class FacultadAgregada : AppCompatActivity() {
             val numeroEstudiantes = findViewById<EditText>(R.id.tvNumeroEstudiantes)
             val numeroDocentes = findViewById<EditText>(R.id.tvNumeroDocentes)
 
-            //db.collection(nombreUniversidad.text.toString()).document()
+            db.collection(nombreUniversidad1.text.toString()).document(idNuevaFacultad.text.toString()).set(
+                hashMapOf(
+                    "nombreFacultad" to nombreNuevaFacultad.text.toString(),
+                    "nombreUniversidad" to nombreUniversidad1.text.toString(),
+                    "numeroCarreras" to numeroCarreras.text.toString(),
+                    "numeroEstudiantes" to numeroEstudiantes.text.toString(),
+                    "numeroDocentes" to numeroDocentes.text.toString()
+                )
+            )
         }
     }
 }
