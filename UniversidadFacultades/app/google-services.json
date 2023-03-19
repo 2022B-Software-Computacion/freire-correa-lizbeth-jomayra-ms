@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "659677649078",
+    "project_id": "b-s-examen2b",
+    "storage_bucket": "b-s-examen2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659677649078:android:01a742324774c6f0aaae17",
+        "android_client_info": {
+          "package_name": "com.example.universidadfacultades"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659677649078-ncpnl5okef2bvmhc2jvkiukh5941ele2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARwrU869oSJsN6RQIrg8QmKAuNpy8sy68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659677649078-ncpnl5okef2bvmhc2jvkiukh5941ele2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
