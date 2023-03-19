@@ -11,6 +11,8 @@ class FacultadAgregada : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_facultad_agregada)
+        this.setTitle("Agregar Facultad")
+        initEventAgregarFacultad()
     }
 
     private fun initEventAgregarFacultad(){

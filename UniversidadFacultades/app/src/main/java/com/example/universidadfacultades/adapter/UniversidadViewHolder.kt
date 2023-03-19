@@ -14,7 +14,7 @@ class UniversidadViewHolder (view: View): RecyclerView.ViewHolder(view){
     val docentes = view.findViewById<TextView>(R.id.itemDocentes)
 
     fun render(universidadModel: FacultadDB){
-        nombreFacultadn.text = universidadModel.nombreUniversidad
+        nombreFacultadn.text = universidadModel.nombreFacultad
         nombreUniversidadn.text = universidadModel.nombreUniversidad
         carreras.text = universidadModel.numeroCarreras
         estudiantes.text = universidadModel.numeroEstudiantes

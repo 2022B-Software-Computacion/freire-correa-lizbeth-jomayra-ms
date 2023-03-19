@@ -16,7 +16,7 @@ class Universidad : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_universidad)
-        this.setTitle("Mostrar Universidad con sus facultades")
+        this.setTitle("Universidades del Ecuador")
         obtenerFacultades()
     }
     fun obtenerFacultades(){
