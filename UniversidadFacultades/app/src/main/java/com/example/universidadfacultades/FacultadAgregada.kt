@@ -14,9 +14,10 @@ class FacultadAgregada : AppCompatActivity() {
     }
 
     private fun initEventAgregarFacultad(){
-        val database = Firebase.firestore
+        val db = Firebase.firestore
         val btnFirestore = findViewById<Button>(R.id.btn_agregarNuevaFacultad)
         btnFirestore.setOnClickListener {
+            val idNuevaFacultad = findViewById<EditText>(R.id.tvIDnuevaFacultad)
             val nombreNuevaFacultad = findViewById<EditText>(R.id.tvNombreFacultad)
             val nombreUniversidad1 = findViewById<EditText>(R.id.tvNombreUniversidad)
             val numeroCarreras = findViewById<EditText>(R.id.tvNumeroCarreras)

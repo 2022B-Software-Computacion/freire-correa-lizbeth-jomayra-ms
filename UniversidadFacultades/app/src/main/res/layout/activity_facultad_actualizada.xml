@@ -6,4 +6,95 @@
     android:layout_height="match_parent"
     tools:context=".FacultadActualizada">
 
+    <Button
+        android:id="@+id/btn_editarFacultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Actualizar"
+        app:layout_constraintEnd_toEndOf="@+id/tv_numeroDocentes"
+        app:layout_constraintStart_toStartOf="@+id/tv_numeroDocentes"
+        app:layout_constraintTop_toBottomOf="@+id/tv_numeroDocentes" />
+
+    <Button
+        android:id="@+id/btn_buscarID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Filtrar"
+        app:layout_constraintEnd_toEndOf="@+id/tv_IDFacultad"
+        app:layout_constraintStart_toStartOf="@+id/tv_IDFacultad"
+        app:layout_constraintTop_toBottomOf="@+id/tv_IDFacultad" />
+
+    <EditText
+        android:id="@+id/tv_IDFacultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_nombreFacultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:minHeight="48dp"
+        android:text="Nombre"
+        app:layout_constraintEnd_toEndOf="@+id/btn_buscarID"
+        app:layout_constraintStart_toStartOf="@+id/btn_buscarID"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscarID" />
+
+    <EditText
+        android:id="@+id/tv_nombreUniversidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:minHeight="48dp"
+        android:text="Universidad"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nombreFacultad"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/tv_nombreFacultad"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombreFacultad" />
+
+    <EditText
+        android:id="@+id/tv_numeroCarreras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        android:text="#Carreras"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nombreUniversidad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_nombreUniversidad"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombreUniversidad" />
+
+    <EditText
+        android:id="@+id/tv_numeroEstudiantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:minHeight="48dp"
+        android:text="#Estudiantes"
+        app:layout_constraintEnd_toEndOf="@+id/tv_numeroCarreras"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_numeroCarreras"
+        app:layout_constraintTop_toBottomOf="@+id/tv_numeroCarreras" />
+
+    <EditText
+        android:id="@+id/tv_numeroDocentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        android:text="#Docentes"
+        app:layout_constraintEnd_toEndOf="@+id/tv_numeroEstudiantes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_numeroEstudiantes"
+        app:layout_constraintTop_toBottomOf="@+id/tv_numeroEstudiantes" />
 </androidx.constraintlayout.widget.ConstraintLayout>
