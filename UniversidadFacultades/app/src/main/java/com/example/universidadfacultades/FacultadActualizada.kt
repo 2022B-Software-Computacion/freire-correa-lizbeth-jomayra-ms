@@ -37,7 +37,7 @@ class FacultadActualizada : AppCompatActivity() {
         }
     }
     fun iniEventActualizarFacultad(){
-        val btnFirestore = findViewById<Button>(R.id.btn_actualizarFacultad)
+        val btnFirestore = findViewById<Button>(R.id.btn_editarFacultad)
         btnFirestore.setOnClickListener{
             val nombreUniversidad = findViewById<EditText>(R.id.tv_nombreUniversidad)//
             val idFacultadDB = findViewById<EditText>(R.id.tv_IDFacultad)// Para filtrar

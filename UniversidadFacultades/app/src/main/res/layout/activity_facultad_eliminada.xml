@@ -7,7 +7,7 @@
     tools:context=".FacultadEliminada">
 
     <Button
-        android:id="@+id/btn_buscarIDFacultad"
+        android:id="@+id/btn_buscarIDFacultadEliminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -22,9 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
+        android:hint="ID Facultad"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        android:hint="ID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
